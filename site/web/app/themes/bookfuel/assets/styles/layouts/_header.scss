@@ -1,0 +1,152 @@
+.top-bar {
+	background-color: $brand-dark;
+	color: #fff;
+	
+
+	ul {
+		margin-bottom: 0;
+		
+		li {
+			float: left;
+			display: block;
+			line-height: 1.5em;
+			font-size: .9em;
+
+			&.phone {
+				padding: .5em 1em;
+			}
+
+			a {
+				color: #fff;
+				padding: .5em 1em;
+				display: block;
+				
+				&:hover {
+					background: transparent;
+				}
+			}
+
+		}
+		
+	}
+		
+	.top-nav {
+		li {
+	
+			
+	
+		}
+	}
+	
+	
+}
+
+#menu-user-navigation {
+	li {
+		
+		a {
+			padding: .5em 1em;
+			
+			&:hover {
+
+			}
+			
+		}
+		
+		&.menu-logout {
+			a {
+				background: $brand-primary;
+			}
+		}
+		
+	}
+}
+
+header.banner {
+	background: #fff;
+	text-align: center;
+	
+	a.brand {
+		font-weight: 300;
+		font-size: 2em;
+		
+		display: inline-block;
+		padding: .1em 0;
+		color: $brand-dark;
+		
+		i {
+			color: $brand-primary;
+			@media (min-width: $screen-sm-min) {
+				color: $brand-dark;
+			}
+		}
+		
+		@media (min-width: $screen-sm-min) {
+			float: left;
+			padding: .29em 0;
+			text-align: left;
+		}
+			
+	}
+	
+	a.hamburger,
+	a.phone {
+		color: $brand-dark;
+		font-size: 1.2em;
+		padding: .6em 0;
+	}
+	
+	.cart-contents {
+		float: right;
+		border-left: 1px solid $divider-color;
+		margin-left: 3em;
+		position: relative;
+		padding: 1em 1em .9em;
+		span {
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			display: block;
+			position: absolute;
+			background: $brand-primary;
+			color: #fff;
+			font-size: .7em;
+			top: 8px;
+			right: 5px;
+			@include border-radius(10px);	
+		}
+		i.fa {
+			font-size: 2em;
+			color: $brand-dark;
+		}
+		
+	}
+	
+	nav {
+		li {
+			float: left;
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: .9em;
+			
+			&:last-child {
+				a {
+					padding-right: 0;
+				}
+			}
+			
+			a {
+				color: $brand-dark;
+				padding: 1.5em 2em;
+				&:hover {
+					color: $brand-primary;
+					background: transparent;
+				}
+				
+			}
+			
+		}
+	}
+	
+}

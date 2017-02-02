@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700);
+
+body {
+	background: $background-color;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.mm-page {
+	position: static;
+}
+
+h2 {
+	color: $heading-color;
+}
+
+.book {
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+		color: $brand-primary;
+	}
+}

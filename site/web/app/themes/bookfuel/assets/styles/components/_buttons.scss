@@ -1,0 +1,37 @@
+.btn {
+	@include transition(.2s);
+	@include border-radius(4px);
+}
+
+.btn-lg {
+	text-transform: uppercase;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.btn-primary-outline {
+	border: 2px solid $brand-primary;
+	background: transparent;
+	color: $brand-primary;
+	
+	&:hover {
+		background: $brand-primary;
+		color: #fff;
+	}
+	
+}
+
+.btn-default {
+	background: $heading-color;
+	color: #fff;
+	border: none;
+	
+	&:hover,
+	&:focus,
+	&:active {
+		background: #2B2B2B;
+		color: #fff;
+		outline: none;
+	}
+	
+}

@@ -1,0 +1,138 @@
+.modal {
+	
+	
+}
+
+.modal-content {
+	overflow: hidden;
+	// Start Modal Header
+	.modal-header {
+
+		h4 {
+			font-size: 1.8em;
+			color: $heading-color;
+			font-weight: 300;
+			padding: 0 15px;
+		}
+		
+	}
+	
+	// Start Modal Body
+	.modal-body {
+		
+		padding: 25px 30px 30px;
+		//background: $background-color;
+		
+		.modal-price {
+			text-align: center;
+			font-size: 3em;
+			font-weight: 300;
+			margin-bottom: .5em;
+			color: $heading-color;
+			line-height: 1em;
+		}
+		
+		.gallery {
+			margin-top: 2em;
+			margin-bottom: 0em;
+			border-top: 1px solid $divider-color;
+			padding-top: 1.8em;
+			
+			.col-sm-3,
+			.col-xs-3 {
+				//padding: 0 10px;
+				margin-bottom: 0;
+			}
+			
+			img {
+				//max-width: 70%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+		}
+
+		label.quantity-label {
+			display: block;
+			text-align: left;
+			margin-bottom: .6em;
+		}
+		
+		div.quantity-add {
+			border-top: 1px solid $divider-color;
+			border-bottom: 1px solid $divider-color;
+			padding: 1em 1em 1.5em;
+		}
+		
+		div.quantity {
+			width: 25%;
+			.qty {
+				@include border-radius(4px);
+				@extend .form-control;
+				width: 100%;
+				margin: 0 auto;
+				height: 42px;
+			}
+			
+		}
+		
+		button.alt {
+			float: right !important;
+			width: 70%;
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+			text-align: center;
+		}
+		
+		ul, p {
+			color: $heading-color !important;
+		}
+		
+		ul {
+			margin-bottom: 2em;
+			font-size: 1em;
+			line-height: 1.5em;
+			font-weight: 300;
+			padding: 0 15px;
+			
+			&:last-child {
+				margin-bottom: 0;	
+			}
+			
+			li {
+				
+				padding: .1em 0 .1em 12px;
+				position: relative;
+				
+				&:before {
+					
+					content: '\f054';
+					font-family: FontAwesome;
+					position: absolute;
+					left: 0;
+					top: 2px;
+					color: $brand-primary;
+					font-size: .8em;
+					
+				}
+				
+			}
+			
+		}
+		
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		
+	}
+	
+	// Start Modal Footer
+	.modal-footer {
+		
+		text-align: center;
+		
+	}
+
+}

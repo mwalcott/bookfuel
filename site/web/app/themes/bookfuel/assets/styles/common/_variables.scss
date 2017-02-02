@@ -1,0 +1,40 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #1C68E2;
+$brand-dark:						#454545;
+$heading-color:					#4A4A4A;
+$divider-color:					#C5D8E1;
+
+$background-color:			#F3F7F9;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin background-cover($align) {
+	background-position: center $align;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin transition($time) {
+	-webkit-transition: all $time ease-in-out;
+	-moz-transition: 		all $time ease-in-out;
+	-ms-transition: 		all $time ease-in-out;
+	-o-transition: 			all $time ease-in-out;
+	transition: 				all $time ease-in-out;	
+}
+
+@mixin inner-shadow($opacity) {
+	-webkit-box-shadow:	inset 0 0 0 5000px rgba(0,0,0,$opacity);
+	box-shadow:					inset 0 0 0 5000px rgba(0,0,0,$opacity);	
+}

@@ -1,0 +1,99 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-default;
+}
+
+.gform_body {
+	ul {
+		margin-bottom: 0;
+	}
+	.label-hidden {
+		
+		label {
+			display: none;
+		}
+			
+	}
+	
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea {
+		border: 1px solid transparent;
+		background: #EFEEF0;
+		width: 100%;
+		margin-bottom: 1em;
+		padding: 1em;
+		@include border-radius(0);
+		outline: none;
+		@include transition(.2s);
+		
+		&:focus {
+			border: 1px solid #ccc;
+		}
+		
+	}
+	
+	.inline-half {
+		
+		@media (min-width: $screen-sm-min) {
+			width: 50%;
+			float: left;
+		}	
+		
+	}
+	
+	.gfield {
+		padding: 0 .5em;
+	}
+	
+}
+
+.gform_footer {
+	text-align: center;
+	input[type=submit] {
+		background: transparent;
+		border: none;
+		outline: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #808080;
+		font-size: 1.2em;
+		padding: 0;
+		
+		&:hover {
+			color: $brand-primary;
+		}
+		
+	}		
+}
+
+
+	::-webkit-input-placeholder {
+		color: #808080;
+		font-weight: 300;
+	}
+	:-moz-placeholder {
+		color: #808080;
+		font-weight: 300;
+	}
+	::-moz-placeholder {
+		color: #808080;
+		font-weight: 300;
+	}
+	:-ms-input-placeholder {
+		color: #808080;
+		font-weight: 300;
+	}
+

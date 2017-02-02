@@ -1,0 +1,52 @@
+.social {
+	@include background-cover(bottom);
+	@include inner-shadow(.5);
+	padding-top: 4em;
+	padding-bottom: 4em;
+	
+	ul {
+		margin-bottom: 0;
+		
+		li {
+			display: inline-block;
+			padding: 0 1em;
+			a {
+				font-size: 1.8em;
+				color: #fff;
+			}
+			
+		}
+		
+	}
+	
+}
+
+.footer-lower {
+	font-size: .8em;
+	nav {
+		
+		ul {
+			margin-bottom: 0;
+		}
+		
+		li {
+			display: inline-block;
+			padding: 1.5em 1em;
+		}
+		
+		a {
+			color: $brand-dark;
+			
+			&:hover {
+				color: $brand-primary;
+			}
+			
+		}
+		
+	}
+	
+	p {
+		margin: 0 0 2em;
+	}
+	
+}
